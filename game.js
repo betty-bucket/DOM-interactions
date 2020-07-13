@@ -44,8 +44,31 @@ function updateCounts () {
     green: 0,
     invisible: 0
   }
-  
+
+  // console.log(document.getElementsByClassName("blue"))
+
+ /* 
+ 
+ Me trying to work stuff out:
+ 
+ blue = count of blue dots
+ green = count of green dots
+ invisible = count of invisible dots
+
+ totals = [count of blue, count of green, count of invisible dots]
+
+ document.getElementsByClassName('invisible')[0] arr.length
+Or is it - document.getElementsByClassName('blue-total')[0].length
+Or is it - document.getElementsByClassName('green').length
+Or is it - document.getElementsByClassName('invisible').length
+ 
+ */
+ 
   // WRITE CODE HERE TO COUNT BLUE, GREEN, AND INVISIBLE DOTS
+
+totals.blue = document.getElementsByClassName('blue').length
+totals.green = document.getElementsByClassName('green').length
+totals.invisible = document.getElementsByClassName('invisible').length
 
   // Once you've done the counting, this function will update the display
   displayTotals(totals)
